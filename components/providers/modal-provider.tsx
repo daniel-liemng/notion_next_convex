@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 
 import SettingsModal from '../modals/settings-modal';
+import CoverImageModal from '../modals/cover-image-modal';
 
 // Prevent Hydration Error
 const ModalProvider = () => {
@@ -17,6 +18,7 @@ const ModalProvider = () => {
   return (
     <>
       <SettingsModal />
+      <CoverImageModal />
     </>
   );
 };
