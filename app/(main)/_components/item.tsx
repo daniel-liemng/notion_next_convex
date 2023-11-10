@@ -78,7 +78,7 @@ const Item = ({
           onExpand?.();
         }
 
-        // router.push(`/documents/${documentId}`);
+        router.push(`/documents/${documentId}`);
       }
     );
 
