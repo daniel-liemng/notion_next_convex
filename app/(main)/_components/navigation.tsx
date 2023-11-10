@@ -23,10 +23,12 @@ import {
 } from '@/components/ui/popover';
 import TrashBox from './trash-box';
 import { useSearch } from '@/hooks/use-search';
+import { useSettings } from '@/hooks/use-settings';
 
 const Navigation = () => {
   // const onOpen = useSearch((store) => store.onOpen);
   const search = useSearch();
+  const settings = useSettings();
 
   const pathname = usePathname();
 
@@ -162,7 +164,7 @@ const Navigation = () => {
 
           <Item onClick={search.onOpen} label='Search' icon={Search} isSearch />
 
-          <Item onClick={() => {}} label='Settings' icon={Settings} />
+          <Item onClick={settings.onOpen} label='Settings' icon={Settings} />
 
           <Item onClick={handleCreate} label='New page' icon={PlusCircle} />
         </div>
